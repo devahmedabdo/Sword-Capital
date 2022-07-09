@@ -1,1182 +1,862 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sword capital</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/slick.css" />
-    <link rel="stylesheet" href="assets/css/slick-theme.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <div class="loading container-fluid">
-      <span class="circle-1"></span>
-      <span class="circle-2"></span>
-      <span class="circle-3"></span>
-      <span class="circle-4"></span>
-      <span class="circle-5"></span>
-      <span class="circle-6"></span>
-      <span class="circle-7"></span>
-      <span class="circle-8"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sword capital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- ///////swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="loading container-fluid">
+    <span class="circle circle-1"></span>
+    <span class="circle circle-2"></span>
+    <span class="circle circle-3"></span>
+    <span class="circle circle-4"></span>
+    <span class="circle circle-5"></span>
+    <span class="circle circle-6"></span>
+    <span class="circle circle-7"></span>
+    <span class="circle circle-8"></span>
+  </div>
+
+
+  <header class="container-fluid position-fixed bg-white">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white row">
+        <a class="col-6 col-lg-3 navbar-brand text-primary text-uppercase" href="#"><img class="d-block w-100"
+            src="assets/images/logo.png" alt="logo" /></a>
+        <button class="navbar-toggler col-md-1 col-2 m-1 fs-6" type="button" data-toggle="collapse"
+          data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-9" id="navbarText">
+          <ul class="navbar-nav mr-auto fw-semibold align-items-start w-100 justify-content-evenly">
+            <li class="nav-item active mx-1 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Partners <span class="sr-only">(current)</span></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Trading</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Academy</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link" style="white-space: nowrap dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">About us</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex flex-row align-items-center gap-3 justify-content-lg-end">
+              <a class="col-3 col-md-2 col-lg-1" href=""><img src="assets/images/OIP.svg" class="d-block w-100"
+                  alt="" /></a>
+
+              <button class="fw-semibold btn btn-outline-primary py-2 px-3">
+                log in
+              </button>
+              <button class="fw-semibold btn btn-primary py-2 px-3">
+                contuct us
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <header class="container-fluid position-fixed bg-white">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white row">
-          <a
-            class="col-6 col-lg-3 navbar-brand text-primary text-uppercase"
-            href="#"
-            ><img class="d-block w-100" src="assets/images/logo.png" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler col-md-1 col-2 m-1 fs-6"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+  <div class="landing">
+    <div class="container">
+
+
+      <div class="swiper px-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+            <div class="d-flex ">
+              <div class="col-2 text-danger fs-3 arrow">&#x2199;</div>
+              <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
+              <div class="col-6">
+                <div>USD/CHF</div>
+                <div class="d-flex gap-1">
+                  <div class="col-3">114.43</div>
+                  <div class="col-2"></div>
+                  <div class="col-7 text-danger">-0.10%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="d-flex ">
+              <div class="col-2 text-success fs-3 arrow">&#x2197;</div>
+              <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
+              <div class="col-6">
+                <div>USD/CHF</div>
+                <div class="d-flex gap-1">
+                  <div class="col-3">114.43</div>
+                  <div class="col-2"></div>
+                  <div class="col-7 text-success">+0.10%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="d-flex ">
+              <div class="col-2 text-danger fs-3 arrow">&#x2199;</div>
+              <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
+              <div class="col-6">
+                <div>USD/CHF</div>
+                <div class="d-flex gap-1">
+                  <div class="col-3">114.43</div>
+                  <div class="col-2"></div>
+                  <div class="col-7 text-danger">-0.10%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="d-flex ">
+              <div class="col-2 text-success fs-3 arrow">&#x2197;</div>
+              <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
+              <div class="col-6">
+                <div>USD/CHF</div>
+                <div class="d-flex gap-1">
+                  <div class="col-3">114.43</div>
+                  <div class="col-2"></div>
+                  <div class="col-7 text-success">+0.10%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ">
+            <div class="d-flex ">
+              <div class="col-2 text-danger fs-3 arrow">&#x2199;</div>
+              <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
+              <div class="col-6">
+                <div>USD/CHF</div>
+                <div class="d-flex gap-1">
+                  <div class="col-3">114.43</div>
+                  <div class="col-2"></div>
+                  <div class="col-7 text-danger">-0.10%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="d-flex ">
+              <div class="col-2 text-success fs-3 arrow">&#x2197;</div>
+              <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
+              <div class="col-6">
+                <div>USD/CHF</div>
+                <div class="d-flex gap-1">
+                  <div class="col-3">114.43</div>
+                  <div class="col-2"></div>
+                  <div class="col-7 text-success">+0.10%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev text-secondary text-opacity-75"></div>
+        <div class="swiper-button-next text-secondary text-opacity-75"></div>
+      </div>
+
+
+      <div class="row flex-wrap-reverse pt-5 align-items-center position-relative">
+        <div class="col-md-6">
+          <h1 class="my-4 text-primary fw-bold landing-h1 lReveal">
+            Worldwide online brokerage
+          </h1>
+          <h3 class="my-4 text-muted fw-normal landing-h3 lReveal">
+            The best trading solutions for individuals and institutions.
+          </h3>
+          <button class="btn btn-primary px-5 py-3 m-1 fw-semibold dReveal">
+            Open an account
           </button>
-          <div class="collapse navbar-collapse col-9" id="navbarText">
-            <ul
-              class="navbar-nav mr-auto fw-semibold align-items-start w-100 justify-content-evenly"
-            >
-              <li class="nav-item active mx-1 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Partners <span class="sr-only">(current)</span></a
-                >
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown mx-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Trading</a
-                >
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown mx-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Tools</a
-                >
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown mx-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Academy</a
-                >
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown mx-1">
-                <a
-                  class="nav-link"
-                  style="white-space: nowrap dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >About us</a
-                >
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li
-                class="nav-item d-flex flex-row align-items-center gap-3 justify-content-lg-end"
-              >
-                <a class="col-3 col-md-2 col-lg-1" href=""
-                  ><img
-                    src="assets/images/OIP.svg"
-                    class="d-block w-100"
-                    alt=""
-                /></a>
-
-                <button class="fw-semibold btn btn-outline-primary py-2 px-3">
-                  log in
-                </button>
-                <button class="fw-semibold btn btn-primary py-2 px-3">
-                  contuct us
-                </button>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <div class="landing">
-      <div class="container">
-        <div class="info">
-          <div class="d-flex col-2">
-            <div class="col-2 text-danger fs-3 arrow">&#x2199;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-danger">-0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-success fs-3 arrow">&#x2197;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-success">+0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-danger fs-3 arrow">&#x2199;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-danger">-0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-success fs-3 arrow">&#x2197;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-success">+0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-danger fs-3 arrow">&#x2199;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-danger">-0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-success fs-3 arrow">&#x2197;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-success">+0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-danger fs-3 arrow">&#x2199;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-danger">-0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-success fs-3 arrow">&#x2197;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-success">+0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-danger fs-3 arrow">&#x2199;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-danger">-0.10%</div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex col-2">
-            <div class="col-2 text-success fs-3 arrow">&#x2197;</div>
-            <div class="col-2 bg-dark bg-opacity-50 m-2 line"></div>
-            <div class="col-6">
-              <div>USD/CHF</div>
-              <div class="d-flex gap-1">
-                <div class="col-3">114.43</div>
-                <div class="col-2"></div>
-                <div class="col-7 text-success">+0.10%</div>
-              </div>
-            </div>
-          </div>
+          <button class="btn btn-outline-primary p-3 m-1 fw-semibold dReveal">
+            Try demo account
+          </button>
         </div>
-        <div
-          class="row flex-wrap-reverse pt-5 align-items-center position-relative"
-        >
-          <div class="col-md-6">
-            <h1 class="my-4 text-primary fw-bold landing-h1 lReveal">
-              Worldwide online brokerage
-            </h1>
-            <h3 class="my-4 text-muted fw-normal landing-h3 lReveal">
-              The best trading solutions for individuals and institutions.
-            </h3>
-            <button class="btn btn-primary px-5 py-3 m-1 fw-semibold dReveal">
-              Open an account
-            </button>
-            <button class="btn btn-outline-primary p-3 m-1 fw-semibold dReveal">
-              Try demo account
-            </button>
-          </div>
-          <div class="col-md-6">
-            <img
-              class="w-100 landing-img rReveal"
-              src="assets/images/landing.png"
-              alt=""
-            />
-          </div>
-          <img
-            src="assets/images/arrow.png"
-            class="arrow-landing position-absolute bottom-0 w-25 d-none d-md-block dReveal"
-            alt=""
-          />
+        <div class="col-md-6">
+          <img class="w-100 landing-img rReveal" src="assets/images/landing.png" alt="" />
         </div>
+        <img src="assets/images/arrow.png"
+          class="arrow-landing position-absolute bottom-0 w-25 d-none d-md-block dReveal" alt="" />
       </div>
     </div>
+  </div>
 
-    <div class="services container-fluid mt-5">
-      <div class="container">
-        <div class="row py-5">
-          <h2
-            class="fw-bolder text-primary title m-auto position-relative dReveal"
-          >
-            Our Services
-          </h2>
-        </div>
-        <div class="row justify-content-center">
-          <div
-            class="col-md-6 col-lg-4 services-card text-center rounded-3 lReveal"
-          >
-            <img
-              src="assets/images/feature1.svg"
-              class="w-25 py-5 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">FULLY REGULATED</h3>
-            <p class="text-muted px-5 pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-            </p>
-          </div>
-          <div
-            class="col-md-6 col-lg-4 services-card text-center rounded-3 dReveal"
-          >
-            <img
-              src="assets/images/feature2.svg"
-              class="w-25 py-5 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">REAL EXCHANGE SPREAD</h3>
-            <p class="text-muted px-5 pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-            </p>
-          </div>
-          <div
-            class="col-md-6 col-lg-4 services-card text-center rounded-3 rReveal"
-          >
-            <img
-              src="assets/images/feature3.svg"
-              class="w-25 py-5 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">FAST PLATFORM AND SECURE</h3>
-            <p class="text-muted px-5 pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-            </p>
-          </div>
-          <div
-            class="col-md-6 col-lg-4 services-card text-center rounded-3 lReveal"
-          >
-            <img
-              src="assets/images/feature4.svg"
-              class="w-25 py-5 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">FUND PROTECTION</h3>
-            <p class="text-muted px-5 pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-            </p>
-          </div>
-          <div
-            class="col-md-6 col-lg-4 services-card text-center rounded-3 dReveal"
-          >
-            <img
-              src="assets/images/feature5.svg"
-              class="w-25 py-5 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">LOW COST</h3>
-            <p class="text-muted px-5 pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-            </p>
-          </div>
-          <div
-            class="col-md-6 col-lg-4 services-card text-center rounded-3 rReveal"
-          >
-            <img
-              src="assets/images/feature6.svg"
-              class="w-25 py-5 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">
-              FX SPREAD STARTS FROM 0.8 IP
-            </h3>
-            <p class="text-muted px-5 pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="app container-fluid mt-5">
+  <div class="services container-fluid mt-5">
+    <div class="container">
       <div class="row py-5">
-        <h2
-          class="fw-bolder text-primary title m-auto position-relative dReveal"
-        >
-          Our App
+        <h2 class="fw-bolder text-primary title m-auto position-relative dReveal">
+          Our Services
         </h2>
       </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 services-card text-center rounded-3 lReveal">
+          <img src="assets/images/feature1.svg" class="w-25 py-5 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">FULLY REGULATED</h3>
+          <p class="text-muted px-5 pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 services-card text-center rounded-3 dReveal">
+          <img src="assets/images/feature2.svg" class="w-25 py-5 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">REAL EXCHANGE SPREAD</h3>
+          <p class="text-muted px-5 pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 services-card text-center rounded-3 rReveal">
+          <img src="assets/images/feature3.svg" class="w-25 py-5 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">FAST PLATFORM AND SECURE</h3>
+          <p class="text-muted px-5 pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 services-card text-center rounded-3 lReveal">
+          <img src="assets/images/feature4.svg" class="w-25 py-5 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">FUND PROTECTION</h3>
+          <p class="text-muted px-5 pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 services-card text-center rounded-3 dReveal">
+          <img src="assets/images/feature5.svg" class="w-25 py-5 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">LOW COST</h3>
+          <p class="text-muted px-5 pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 services-card text-center rounded-3 rReveal">
+          <img src="assets/images/feature6.svg" class="w-25 py-5 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">
+            FX SPREAD STARTS FROM 0.8 IP
+          </h3>
+          <p class="text-muted px-5 pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <div class="app-1 py-5">
-        <div class="container row m-auto align-items-center">
-          <div class="col-md-6 pb-5">
-            <h2 class="my-3 fw-bolder text-primary lReveal">
-              Sword Capital Mobile App
-            </h2>
-            <p class="my-3 text-muted lReveal pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-              <a href="" class="text-warning">Read more... </a>
-            </p>
-            <div class="row">
-              <a href="" class="google-play d-block col-6"
-                ><img
-                  src="assets/images/google.svg"
-                  class="w-100 lReveal"
-                  alt=""
-              /></a>
-              <a href="" class="app-store d-block col-6"
-                ><img
-                  src="assets/images/apple.svg"
-                  class="w-100 lReveal"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <img src="assets/images/phone-1.png" class="w-100 rReveal" alt="" />
+  <div class="app container-fluid mt-5">
+    <div class="row py-5">
+      <h2 class="fw-bolder text-primary title m-auto position-relative dReveal">
+        Our App
+      </h2>
+    </div>
+
+    <div class="app-1 py-5">
+      <div class="container row m-auto align-items-center">
+        <div class="col-md-6 pb-5">
+          <h2 class="my-3 fw-bolder text-primary lReveal">
+            Sword Capital Mobile App
+          </h2>
+          <p class="my-3 text-muted lReveal pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+            <a href="" class="text-warning">Read more... </a>
+          </p>
+          <div class="row">
+            <a href="" class="google-play d-block col-6"><img src="assets/images/google.svg" class="w-100 lReveal"
+                alt="" /></a>
+            <a href="" class="app-store d-block col-6"><img src="assets/images/apple.svg" class="w-100 lReveal"
+                alt="" /></a>
           </div>
         </div>
-      </div>
-      <div class="app-2 py-5">
-        <div class="container row m-auto align-items-center flex-row-reverse">
-          <div class="col-md-6 pb-5">
-            <h2 class="my-3 fw-bolder text-primary lReveal">
-              Sword Capital Mobile App
-            </h2>
-            <p class="my-3 text-muted lReveal pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-              <a href="" class="text-warning">Read more... </a>
-            </p>
-            <div class="row">
-              <a href="" class="google-play d-block col-6"
-                ><img
-                  src="assets/images/google.svg"
-                  class="w-100 lReveal"
-                  alt=""
-              /></a>
-              <a href="" class="app-store d-block col-6"
-                ><img
-                  src="assets/images/apple.svg"
-                  class="w-100 lReveal"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="col-md-6 pb-5">
-            <img src="assets/images/phone-2.png" class="w-100 rReveal" alt="" />
-          </div>
+        <div class="col-md-6">
+          <img src="assets/images/phone-1.png" class="w-100 rReveal" alt="" />
         </div>
       </div>
-      <div class="app-3 py-5">
-        <div class="container row m-auto align-items-center">
-          <div class="col-md-6 pb-5">
-            <h2 class="my-3 fw-bolder text-primary lReveal">
-              Sword Capital Mobile App
-            </h2>
-            <p class="my-3 text-muted lReveal pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
-              massa purus arcu convallis risus sem facilisis quam. Consequat, ut
-              et ut dictumst eget id amet, erat.
-              <a href="" class="text-warning">Read more... </a>
-            </p>
-            <div class="row">
-              <a href="" class="google-play d-block col-6"
-                ><img
-                  src="assets/images/google.svg"
-                  class="w-100 lReveal"
-                  alt=""
-              /></a>
-              <a href="" class="app-store d-block col-6"
-                ><img
-                  src="assets/images/apple.svg"
-                  class="w-100 lReveal"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <img src="assets/images/phone-3.png" class="w-100 rReveal" alt="" />
+    </div>
+    <div class="app-2 py-5">
+      <div class="container row m-auto align-items-center flex-row-reverse">
+        <div class="col-md-6 pb-5">
+          <h2 class="my-3 fw-bolder text-primary lReveal">
+            Sword Capital Mobile App
+          </h2>
+          <p class="my-3 text-muted lReveal pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+            <a href="" class="text-warning">Read more... </a>
+          </p>
+          <div class="row">
+            <a href="" class="google-play d-block col-6"><img src="assets/images/google.svg" class="w-100 lReveal"
+                alt="" /></a>
+            <a href="" class="app-store d-block col-6"><img src="assets/images/apple.svg" class="w-100 lReveal"
+                alt="" /></a>
           </div>
         </div>
+        <div class="col-md-6 pb-5">
+          <img src="assets/images/phone-2.png" class="w-100 rReveal" alt="" />
+        </div>
       </div>
-      <!-- <div class="row py-5 align-items-center flex-row-reverse">
+    </div>
+    <div class="app-3 py-5">
+      <div class="container row m-auto align-items-center">
+        <div class="col-md-6 pb-5">
+          <h2 class="my-3 fw-bolder text-primary lReveal">
+            Sword Capital Mobile App
+          </h2>
+          <p class="my-3 text-muted lReveal pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
+            massa purus arcu convallis risus sem facilisis quam. Consequat, ut
+            et ut dictumst eget id amet, erat.
+            <a href="" class="text-warning">Read more... </a>
+          </p>
+          <div class="row">
+            <a href="" class="google-play d-block col-6"><img src="assets/images/google.svg" class="w-100 lReveal"
+                alt="" /></a>
+            <a href="" class="app-store d-block col-6"><img src="assets/images/apple.svg" class="w-100 lReveal"
+                alt="" /></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/phone-3.png" class="w-100 rReveal" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row py-5 align-items-center flex-row-reverse">
      
       </div>
       <div class="row py-5 align-items-center">
         
       </div> -->
-    </div>
-    <div class="account container-fluid mt-5">
-      <div class="container">
-        <div class="row py-5">
-          <h2
-            class="fw-bolder text-primary title m-auto position-relative dReveal"
-          >
-            Create an Account
-          </h2>
-        </div>
-        <div class="row justify-content-center gap-3">
-          <div
-            class="col-md-5 col-lg-3 account-card text-center rounded-3 lReveal border-4 border"
-          >
-            <img
-              src="assets/images/Frame-3.svg"
-              class="w-50 py-3 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">Personal Account</h3>
-            <p class="text-muted px-2 pb-3">
-              1 pip spread zero fees, faster and no requotes
-            </p>
-            <a class="btn btn-primary w-100 py-2 mb-4" href=""
-              >Open an account</a
-            >
-          </div>
-          <div
-            class="col-md-5 col-lg-3 account-card text-center rounded-3 uReveal border-4 border"
-          >
-            <img
-              src="assets/images/Frame-2.svg"
-              class="w-50 py-3 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">Premium Account</h3>
-            <p class="text-muted px-2 pb-3">
-              Trade with confidence, minimum account $100,000
-            </p>
-            <a class="btn btn-primary w-100 py-2 mb-4" href=""
-              >Open an account</a
-            >
-          </div>
-          <div
-            class="col-md-5 col-lg-3 account-card text-center rounded-3 rReveal border-4 border"
-          >
-            <img
-              src="assets/images/Frame-1.svg"
-              class="w-50 py-3 my-3"
-              alt=""
-            />
-            <h3 class="fw-bolder py-2 text-dark">Corporate Account</h3>
-            <p class="text-muted px-2 pb-3">
-              Sword capital provide a professional service for institutional
-              clients
-            </p>
-            <a class="btn btn-primary w-100 py-2 mb-4" href=""
-              >Open an account</a
-            >
-          </div>
-        </div>
+  </div>
+  <div class="account container-fluid mt-5">
+    <div class="container">
+      <div class="row py-5">
+        <h2 class="fw-bolder text-primary title m-auto position-relative dReveal">
+          Create an Account
+        </h2>
       </div>
-    </div>
-
-    <div class="testimonials container-fluid mt-5 py-5">
-      <div class="container">
-        <div class="row py-5">
-          <h2
-            class="fw-bolder text-primary title m-auto position-relative dReveal"
-          >
-            Testimonials
-          </h2>
-        </div>
-        <div class="responsive">
-          <div class="dReveal text-center pb-5 mx-2">
-            <img
-              class="w-50 d-block m-auto py-5 rounded-circle"
-              src="assets/images/testomonials.png"
-              alt=""
-            />
-            <h2 class="fw-bolder">Jane Cooper</h2>
-            <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
-            <p class="text-muted">
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat"
-            </p>
-          </div>
-          <div class="dReveal text-center pb-5 mx-2">
-            <img
-              class="w-50 d-block m-auto py-5 rounded-circle"
-              src="assets/images/testomonials2.png"
-              alt=""
-            />
-            <h2 class="fw-bolder">Jane Cooper</h2>
-            <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
-            <p class="text-muted">
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat"
-            </p>
-          </div>
-          <div class="dReveal text-center pb-5 mx-2">
-            <img
-              class="w-50 d-block m-auto py-5 rounded-circle"
-              src="assets/images/testomonials3.png"
-              alt=""
-            />
-            <h2 class="fw-bolder">Jane Cooper</h2>
-            <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
-            <p class="text-muted">
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat"
-            </p>
-          </div>
-          <div class="dReveal text-center pb-5 mx-2">
-            <img
-              class="w-50 d-block m-auto py-5 rounded-circle"
-              src="assets/images/testomonials.png"
-              alt=""
-            />
-            <h2 class="fw-bolder">Jane Cooper</h2>
-            <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
-            <p class="text-muted">
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat"
-            </p>
-          </div>
-          <div class="dReveal text-center pb-5 mx-2">
-            <img
-              class="w-50 d-block m-auto py-5 rounded-circle"
-              src="assets/images/testomonials2.png"
-              alt=""
-            />
-            <h2 class="fw-bolder">Jane Cooper</h2>
-            <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
-            <p class="text-muted">
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat"
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="faq container-fluid bg-primary text-white py-4 my-5">
-      <div class="container text-center">
-        <h2 class="fw-bolder uReveal">FAQ’s</h2>
-        <p class="fw-semibold dReveal">Need answers? Find them here...</p>
-      </div>
-    </div>
-    <section class="py-4 faq-info">
-      <div class="container py-5">
-        <div class="accordion d-flex flex-column gap-1" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
-                ullamcorper consectetur non iaculis. Venenatis elit morbi
-                natoque leo. Quisque faucibus dictum semper maecenas amet
-                habitant. Magna libero nunc, quam nunc id ut urna tortor.
-                Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
-                pellentesque placerat feugiat odio amet, diam. Adipiscing
-                suscipit sed elit dui neque. Nibh est pellentesque volutpat
-                mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
-                aliquet volutpat id convallis quam dolor.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="true"
-                aria-controls="collapseTwo"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
-                ullamcorper consectetur non iaculis. Venenatis elit morbi
-                natoque leo. Quisque faucibus dictum semper maecenas amet
-                habitant. Magna libero nunc, quam nunc id ut urna tortor.
-                Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
-                pellentesque placerat feugiat odio amet, diam. Adipiscing
-                suscipit sed elit dui neque. Nibh est pellentesque volutpat
-                mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
-                aliquet volutpat id convallis quam dolor.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="true"
-                aria-controls="collapseThree"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
-                ullamcorper consectetur non iaculis. Venenatis elit morbi
-                natoque leo. Quisque faucibus dictum semper maecenas amet
-                habitant. Magna libero nunc, quam nunc id ut urna tortor.
-                Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
-                pellentesque placerat feugiat odio amet, diam. Adipiscing
-                suscipit sed elit dui neque. Nibh est pellentesque volutpat
-                mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
-                aliquet volutpat id convallis quam dolor.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="true"
-                aria-controls="collapseFour"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
-                ullamcorper consectetur non iaculis. Venenatis elit morbi
-                natoque leo. Quisque faucibus dictum semper maecenas amet
-                habitant. Magna libero nunc, quam nunc id ut urna tortor.
-                Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
-                pellentesque placerat feugiat odio amet, diam. Adipiscing
-                suscipit sed elit dui neque. Nibh est pellentesque volutpat
-                mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
-                aliquet volutpat id convallis quam dolor.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-5"
-                aria-expanded="true"
-                aria-controls="collapse-5"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </button>
-            </h2>
-            <div
-              id="collapse-5"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
-                ullamcorper consectetur non iaculis. Venenatis elit morbi
-                natoque leo. Quisque faucibus dictum semper maecenas amet
-                habitant. Magna libero nunc, quam nunc id ut urna tortor.
-                Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
-                pellentesque placerat feugiat odio amet, diam. Adipiscing
-                suscipit sed elit dui neque. Nibh est pellentesque volutpat
-                mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
-                aliquet volutpat id convallis quam dolor.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-6"
-                aria-expanded="true"
-                aria-controls="collapse-6"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </button>
-            </h2>
-            <div
-              id="collapse-6"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
-                ullamcorper consectetur non iaculis. Venenatis elit morbi
-                natoque leo. Quisque faucibus dictum semper maecenas amet
-                habitant. Magna libero nunc, quam nunc id ut urna tortor.
-                Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
-                pellentesque placerat feugiat odio amet, diam. Adipiscing
-                suscipit sed elit dui neque. Nibh est pellentesque volutpat
-                mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
-                aliquet volutpat id convallis quam dolor.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-7"
-                aria-expanded="true"
-                aria-controls="collapse-7"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </button>
-            </h2>
-            <div
-              id="collapse-7"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
-                ullamcorper consectetur non iaculis. Venenatis elit morbi
-                natoque leo. Quisque faucibus dictum semper maecenas amet
-                habitant. Magna libero nunc, quam nunc id ut urna tortor.
-                Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
-                pellentesque placerat feugiat odio amet, diam. Adipiscing
-                suscipit sed elit dui neque. Nibh est pellentesque volutpat
-                mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
-                aliquet volutpat id convallis quam dolor.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-8"
-                aria-expanded="true"
-                aria-controls="collapse-8"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </button>
-            </h2>
-            <div
-              id="collapse-8"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
-                ullamcorper consectetur non iaculis. Venenatis elit morbi
-                natoque leo. Quisque faucibus dictum semper maecenas amet
-                habitant. Magna libero nunc, quam nunc id ut urna tortor.
-                Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
-                pellentesque placerat feugiat odio amet, diam. Adipiscing
-                suscipit sed elit dui neque. Nibh est pellentesque volutpat
-                mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
-                aliquet volutpat id convallis quam dolor.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="bg-primary mt-5">
-      <div class="py-5">
-        <div class="container">
-          <div class="row">
-            <div
-              class="dReveal col-md-6 col-lg-3 d-flex align-items-center justify-content-start flex-column pb-3"
-            >
-              <div class="w-100 mb-3">
-                <img src="assets/images/sword-logo.png" class="w-100" alt="" />
-              </div>
-              <div
-                class="social-icons w-100 d-flex align-items-center fs-2 justify-content-start"
-              >
-                <a href="#" class="hvr-grow mx-3 text-warning">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="#" class="hvr-grow mx-3 text-warning">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#" class="hvr-grow mx-3 text-warning">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#" class="hvr-grow mx-3 text-warning">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="dReveal col-md-6 col-lg-3">
-              <div class="px-4">
-                <h5 class="pb-2 mb-3 fw-bold text-warning">Trading</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >MT5 Platform
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >MT4 Platform
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Sword Mobile App
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Mobile Apps
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Trading Signals
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Open Accounts
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Downloads
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="dReveal col-md-6 col-lg-3">
-              <div class="footer-links px-4">
-                <h5 class="pb-2 mb-3 fw-bold text-warning">Contacts</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Open Demo Accounts
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >OpenPersonal Accounts</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Open IB Accounts</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Withdrawel & Deposits</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Partners</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none hvr-grow text-white"
-                      >Trading Platforms</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="dReveal col-md-6 col-lg-3">
-              <div class="footer-links px-4">
-                <h5 class="pb-2 mb-3 fw-bold text-warning footer-title">
-                  Tools
-                </h5>
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none text-white hvr-grow"
-                      >MT4 Account
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none text-white hvr-grow"
-                      >MT5 Account</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none text-white hvr-grow"
-                      >Company Regulations</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none text-white hvr-grow"
-                      >AML Policy</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none text-white hvr-grow"
-                      >Submit Complaint</a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none text-white hvr-grow"
-                      >Contatc us</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="py-4">
-        <div class="container">
-          <p class="text-white mb-0 text-center">
-            Copyright&copy; 2022 SWORD CAPITAL| All Rights Reserved
+      <div class="row justify-content-center gap-3">
+        <div class="col-md-5 col-lg-3 account-card text-center rounded-3 lReveal border-4 border">
+          <img src="assets/images/Frame-3.svg" class="w-50 py-3 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">Personal Account</h3>
+          <p class="text-muted px-2 pb-3">
+            1 pip spread zero fees, faster and no requotes
           </p>
+          <a class="btn btn-primary w-100 py-2 mb-4" href="">Open an account</a>
+        </div>
+        <div class="col-md-5 col-lg-3 account-card text-center rounded-3 uReveal border-4 border">
+          <img src="assets/images/Frame-2.svg" class="w-50 py-3 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">Premium Account</h3>
+          <p class="text-muted px-2 pb-3">
+            Trade with confidence, minimum account $100,000
+          </p>
+          <a class="btn btn-primary w-100 py-2 mb-4" href="">Open an account</a>
+        </div>
+        <div class="col-md-5 col-lg-3 account-card text-center rounded-3 rReveal border-4 border">
+          <img src="assets/images/Frame-1.svg" class="w-50 py-3 my-3" alt="" />
+          <h3 class="fw-bolder py-2 text-dark">Corporate Account</h3>
+          <p class="text-muted px-2 pb-3">
+            Sword capital provide a professional service for institutional
+            clients
+          </p>
+          <a class="btn btn-primary w-100 py-2 mb-4" href="">Open an account</a>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="position-fixed chat-holder">
-        <a
-          href="https://wa.me/15551234567"
-          target="_blank"
-          class="text-white whatsapp"
-        >
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a
-          href="https://wa.me/15551234567"
-          target="_blank"
-          class="text-white instgram"
-        >
-          <i class="fa-brands fa-instagram"></i>
-        </a>
+  <div class="testimonials container-fluid mt-5 py-5">
+    <div class="container">
+      <div class="row py-5">
+        <h2 class="fw-bolder text-primary title m-auto position-relative dReveal">
+          Testimonials
+        </h2>
       </div>
-    </footer>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="swiper container">
+
+        <div class="swiper-wrapper">
+
+
+
+          <div class="swiper-slide">
+            <div class=" dReveal text-center pb-5 mx-2 ">
+              <img class="w-50 d-block m-auto py-5 rounded-circle" src="assets/images/testomonials.png" alt="" />
+              <h2 class="fw-bolder">Jane Cooper</h2>
+              <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
+              <p class="text-muted">
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat"
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+            <div class=" dReveal text-center pb-5 mx-2 ">
+              <img class="w-50 d-block m-auto py-5 rounded-circle" src="assets/images/testomonials2.png" alt="" />
+              <h2 class="fw-bolder">Jane Cooper</h2>
+              <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
+              <p class="text-muted">
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat"
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+            <div class=" dReveal text-center pb-5 mx-2 ">
+              <img class="w-50 d-block m-auto py-5 rounded-circle" src="assets/images/testomonials3.png" alt="" />
+              <h2 class="fw-bolder">Jane Cooper</h2>
+              <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
+              <p class="text-muted">
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat"
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+
+            <div class=" dReveal text-center pb-5 mx-2 ">
+              <img class="w-50 d-block m-auto py-5 rounded-circle" src="assets/images/testomonials.png" alt="" />
+              <h2 class="fw-bolder">Jane Cooper</h2>
+              <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
+              <p class="text-muted">
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat"
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+
+
+            <div class=" dReveal text-center pb-5 mx-2">
+              <img class="w-50 d-block m-auto py-5 rounded-circle" src="assets/images/testomonials2.png" alt="" />
+              <h2 class="fw-bolder">Jane Cooper</h2>
+              <span class="mb-4 text-opacity-50 text-dark">Art Director</span>
+              <p class="text-muted">
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat"
+              </p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="swiper-button-prev text-secondary text-opacity-75"></div>
+        <div class="swiper-button-next text-secondary text-opacity-75"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq container-fluid bg-primary text-white py-4 my-5">
+    <div class="container text-center">
+      <h2 class="fw-bolder uReveal">FAQ’s</h2>
+      <p class="fw-semibold dReveal">Need answers? Find them here...</p>
+    </div>
+  </div>
+  <section class="py-4 faq-info">
+    <div class="container py-5">
+      <div class="accordion d-flex flex-column gap-1" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="true" aria-controls="collapseTwo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="true" aria-controls="collapseThree">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+              aria-expanded="true" aria-controls="collapseFour">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5"
+              aria-expanded="true" aria-controls="collapse-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6"
+              aria-expanded="true" aria-controls="collapse-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7"
+              aria-expanded="true" aria-controls="collapse-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8"
+              aria-expanded="true" aria-controls="collapse-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-primary mt-5">
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="dReveal col-md-6 col-lg-3 d-flex align-items-center justify-content-start flex-column pb-3">
+            <div class="w-100 mb-3">
+              <img src="assets/images/sword-logo.png" class="w-100" alt="" />
+            </div>
+            <div class="social-icons w-100 d-flex align-items-center fs-2 justify-content-start">
+              <a href="#" class="hvr-grow mx-3 text-warning">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="#" class="hvr-grow mx-3 text-warning">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="hvr-grow mx-3 text-warning">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="hvr-grow mx-3 text-warning">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="dReveal col-md-6 col-lg-3">
+            <div class="px-4">
+              <h5 class="pb-2 mb-3 fw-bold text-warning">Trading</h5>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">MT5 Platform
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">MT4 Platform
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Sword Mobile App
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Mobile Apps
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Trading Signals
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Open Accounts
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Downloads
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dReveal col-md-6 col-lg-3">
+            <div class="footer-links px-4">
+              <h5 class="pb-2 mb-3 fw-bold text-warning">Contacts</h5>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Open Demo Accounts
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">OpenPersonal Accounts</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Open IB Accounts</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Withdrawel & Deposits</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Partners</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none hvr-grow text-white">Trading Platforms</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dReveal col-md-6 col-lg-3">
+            <div class="footer-links px-4">
+              <h5 class="pb-2 mb-3 fw-bold text-warning footer-title">
+                Tools
+              </h5>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none text-white hvr-grow">MT4 Account
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none text-white hvr-grow">MT5 Account</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none text-white hvr-grow">Company Regulations</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none text-white hvr-grow">AML Policy</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none text-white hvr-grow">Submit Complaint</a>
+                </li>
+                <li class="mb-3">
+                  <a href="#" class="text-decoration-none text-white hvr-grow">Contatc us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-4">
+      <div class="container">
+        <p class="text-white mb-0 text-center">
+          Copyright&copy; 2022 SWORD CAPITAL| All Rights Reserved
+        </p>
+      </div>
+    </div>
+
+    <div class="position-fixed chat-holder">
+      <a href="https://wa.me/15551234567" target="_blank" class="text-white whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://wa.me/15551234567" target="_blank" class="text-white instgram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -333,3 +333,9 @@ header {
 .landing .info button {
   display: none;
 }
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 30px !important;
+}
