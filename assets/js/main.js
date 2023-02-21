@@ -63,3 +63,36 @@ const swiper = new Swiper(".swiper", {
     delay: 5000,
   },
 });
+const swiper2 = new Swiper(".swiper2", {
+  // slidesPerView: 1,
+  // spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+  // slidesPerGroup: 1,
+  // loop: true,
+  // loopFillGroupWithBlank: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
+});
